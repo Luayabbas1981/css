@@ -32,20 +32,16 @@
         top: 35%;
         translate: -50%;
       }
-      @media (max-width: 767px) {
-        .con {
-          translate: -40%;
-        }
-      }
+
       .frame {
         position: relative;
         width: 300px;
         height: 300px;
         scale: 2;
       }
-      @keyframes spin {
-        to {
-          rotate: y 360deg;
+      @media (max-width: 767px) {
+        .frame {
+          scale: 1.4;
         }
       }
       .c {
