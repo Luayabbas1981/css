@@ -20,14 +20,22 @@
     <style>
       body {
         height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         font-weight: 800;
         font-family: "Rajdhani", sans-serif;
         font-style: italic;
         overflow: hidden;
         background: #000;
+      }
+      .con{
+        position: absolute;
+        left: 50%;
+        top: 35%;
+        translate: -50% ;
+      }
+      @media(max-width:767px){
+        .con{
+          translate: -40%;
+        }
       }
       .frame {
         position: relative;
@@ -84,16 +92,13 @@
         filter: blur(7px);
         opacity: 0.6;
       }
-      @media(max-width:767px){
-        .frame{
-          scale: 0.7;
-        }
-      }
+     
     </style>
   </head>
   <body>
     <!--  <img src="./WhatsApp Image 2023-04-07 at 12.48.00 AM.jpeg" alt="" width="200px"
     height="200px">  -->
+    <div class="con">
     <div class="frame">
       <div class="back"></div>
       <div class="c">c</div>
@@ -101,5 +106,6 @@
       <div class="s2">s</div>
       <div class="three">3</div>
     </div>
+  </div>
   </body>
 </html>
